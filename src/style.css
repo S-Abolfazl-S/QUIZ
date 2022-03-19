@@ -1,5 +1,170 @@
 * {
-	padding: 0;
+	padding: 0%;
 	margin: 0;
 	box-sizing: border-box;
+	direction: rtl;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+/* ################################## header ################################### */
+header {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 10px 10px 0 10px; 
+}
+
+header > .head {
+	width: inherit;
+	height: inherit;
+	padding: 3px;
+	border-radius: 5px;
+	box-shadow: 0 0 4px blue;
+	margin-bottom: 15px;
+}
+header > div:not(:nth-child(1)) {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+header > .info {
+	flex-wrap: wrap;
+}
+header > .info p {
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	white-space: normal;
+	box-shadow: 0 0 4px blue;
+	margin: 0;
+}
+header > div.info > .timer {
+	direction: ltr;
+	box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+	font-size: 1.5em;
+	width: 40%;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ################################## /header ################################### */
+/* ################################## main ################################### */
+main {
+	height: auto;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+
+/* ################################## form ################################### */
+form {
+	width: 1200px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+form > #form {
+	position: fixed;
+	width: 50%;
+	/* height: ش;  */
+	background-color: azure;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 15px;
+	box-shadow: 0 0 4px black;
+}
+form > #form * {
+	flex-wrap: wrap;
+}
+form > #form > * {
+	margin: 5px;
+}
+form > #form > label {
+	width: 100%;
+	display: inherit;
+	white-space: normal;
+	justify-content: space-between;
+}
+form > #form > label > input {
+	width: 50%;
+}
+form > #form > #gender {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+/* ################################## /form ################################### */
+/* ################################## quiz-form ################################### */
+#quiz-form { 
+	width: 100%;
+	height: auto;
+	text-align: right;
+}
+#quiz-form > div {
+	width: inherit;
+	height: inherit;
+	/* background-color: #DBF6E9; */
+	box-shadow: 0 0 4px #888;
+	border-radius: 15px;
+	padding: 5px;
+	margin-bottom: 15px;
+	color: #000;
+	font-size: 18px;
+}
+
+#quiz-form div h4 {
+	height: 30px;
+	line-height: 30px;
+	background-color: #dbf6e9;
+	border-radius: 15px;
+	padding: 5px 10px;
+	padding-top: 0px;
+	text-align: center;
+	color: #000;
+	line-height: 30px;
+}
+#quiz-form div div {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+#quiz-form div:nth-child(1) { 
+}
+/* ################################## /quiz-form ################################### */
+
+/* ################################## result ################################### */
+main div.res {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	background-color: aliceblue;
+	box-shadow: 0 0 4px blue;
+	border-radius: 5px;
+	text-align: right;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+main div.res :not(:nth-child(3)) { 
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+main div.res :nth-child(2) {
+	direction: ltr;
+}
+main div.res * { 
+	font-weight: lighter;
+	font-size: 2em;
+}
+/* ################################## /result ################################### */
+/* ################################## main ################################### */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,89 @@
     <!-- CSS LINK'S -->
     <link rel="stylesheet" href="./src/style.css">
 </head>
+
 <body>
-    
+    <!--###### header ######-->
+    <header>
+        <div class="head">
+            <h3>بسمه تعالی</h3>
+            <h4>امتحان مبانی کامپیوتر</h4>
+        </div>
+        <div class="info">
+            <p>مشخصات</p>
+            <div class="timer">60 : 00</div>
+        </div>
+    </header>
+    <!--###### end header ######-->
+    <!--###### form ######-->
+    <form action="#">
+        <div id="form">
+            <label for="fullname" class="input-group-text">
+                نام و نام خانوادگی:
+                <input id="fullname" class="form-control" type="text" name="fullname">
+            </label>
+            <label for="email" class="input-group-text">
+                ایمیل:
+                <input id="email" class="form-control" type="text">
+            </label>
+            <div id="gender" class="input-group-text">
+                جنست:
+                <label for="male" class="btn btn-light">
+                    مذکر:
+                    <input id="male" type="radio" name="gender" value="male">
+                </label>
+                <label for="female" class="btn btn-light">
+                    مؤنث:
+                    <input id="female" type="radio" name="gender" value="female">
+                </label>
+            </div>
+            <button type="button" id="reg-btn" class="btn btn-info">ثبت اطلاعات</button>
+        </div>
+    </form>
+    <!--###### end form ######-->
+
+    <!--###### main content ######-->
+    <main>
+        <div id="quiz-form">
+            <!-- start-question template -->
+            <div>
+                <h4>سوال1</h4>
+                <p for="">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                </p>
+                <!-- start-options -->
+                <div class="answer">
+                    <label class="btn btn-light">
+                        گزینه اول
+                        <input type="radio" name="q0" value="1">
+                    </label>
+                    <label class="btn btn-light">
+                        گزینه دوم
+                        <input type="radio" name="q0" value="2">
+                    </label>
+                    <label class="btn btn-light">
+                        گزینه سوم
+                        <input type="radio" name="q0" value="3">
+                    </label>
+                    <label class="btn btn-light">
+                        گزینه چهارم
+                        <input type="radio" name="q0" value="4">
+                    </label>
+                    <!-- end-options -->
+                </div>
+            </div>
+            <!-- end-question template -->
+        </div>
+        <!-- start_result -->
+        <div class="res">
+            <h4>نمره</h4>
+            <h4>زمان پاسخ گویی</h4>
+            <button class="btn btn-outline-secondary">ارائه نتیجه</button>
+        </div>
+        <!-- end_result -->
+    </main>
+    <!--###### /main content ######-->
     <script src="./src/index.js"></script>
 </body>
+
 </html>
