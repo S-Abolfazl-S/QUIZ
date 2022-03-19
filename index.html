@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ</title>
+    <meta name="author" content="S-Abolfazl-S">
+    <meta name="description" content="this is a Quiz WebSite">
+    <title>Quiz</title>
     <!-- CSS LINK'S -->
-    <link rel="stylesheet" href="./src/style.css">
+    <Style type="text/css">
+        @import url("./src/style.css");
+        @import url("./assets/bootstrap/css/bootstrap.min.css");
+    </Style>
 </head>
 
 <body>
@@ -19,34 +24,25 @@
         </div>
         <div class="info">
             <p>مشخصات</p>
-            <div class="timer">60 : 00</div>
+            <div class="timer">10 : 00</div>
         </div>
     </header>
     <!--###### end header ######-->
     <!--###### form ######-->
     <form action="#">
-        <div id="form">
-            <label for="fullname" class="input-group-text">
-                نام و نام خانوادگی:
-                <input id="fullname" class="form-control" type="text" name="fullname">
-            </label>
-            <label for="email" class="input-group-text">
-                ایمیل:
-                <input id="email" class="form-control" type="text">
-            </label>
-            <div id="gender" class="input-group-text">
-                جنست:
-                <label for="male" class="btn btn-light">
-                    مذکر:
-                    <input id="male" type="radio" name="gender" value="male">
-                </label>
-                <label for="female" class="btn btn-light">
-                    مؤنث:
-                    <input id="female" type="radio" name="gender" value="female">
-                </label>
-            </div>
-            <button type="button" id="reg-btn" class="btn btn-info">ثبت اطلاعات</button>
+        <div class="input-group-text">
+            <label for="name">نام کاربر:</label>
+            <input id="name" class="form-control" type="text" name="name" required>
         </div>
+        <div class="input-group-text">
+            <label for="email">ایمیل:</label>
+            <input id="email" class="form-control" type="text" required>
+        </div>
+        <div class="input-group-text">
+            <label for="password">رمز عبور:</label>
+            <input id="password" class="form-control" type="text" required>
+        </div>
+        <button type="button" id="login-btn" class="btn btn-info">ورود</button>
     </form>
     <!--###### end form ######-->
 

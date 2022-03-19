@@ -1,9 +1,14 @@
+@font-face {
+	font-family: IranSans;
+	src: url("../assets/fonts/ttf/IRANSansWeb.ttf");
+}
+
 * {
 	padding: 0%;
 	margin: 0;
 	box-sizing: border-box;
 	direction: rtl;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-family: IranSans, sans-serif;
 }
 
 /* ################################## header ################################### */
@@ -11,7 +16,8 @@ header {
 	width: 100%;
 	height: auto;
 	text-align: center;
-	padding: 10px 10px 0 10px; 
+	padding: 10px 10px 0 10px;
+	display: none;
 }
 
 header > .head {
@@ -19,7 +25,7 @@ header > .head {
 	height: inherit;
 	padding: 3px;
 	border-radius: 5px;
-	box-shadow: 0 0 4px blue;
+	box-shadow: 0 0 4px #888 !important;
 	margin-bottom: 15px;
 }
 header > div:not(:nth-child(1)) {
@@ -59,8 +65,6 @@ main {
 
 /* ################################## form ################################### */
 form {
-	width: 1200px;
-	height: 400px;
 	display: flex;
 	justify-content: center;
 	position: fixed;
@@ -69,42 +73,52 @@ form {
 	transform: translate(-50%, -50%);
 }
 
-form > #form {
-	position: fixed;
-	width: 50%;
-	/* height: ش;  */
+form {
+	width: 500px;
+	height: auto;
+	padding: 5px 10px;
 	background-color: azure;
-	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #dfdfdf;
+	position: fixed;
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
-	align-items: flex-start;
-	border-radius: 15px;
-	box-shadow: 0 0 4px black;
+	align-items: flex-end;
 }
-form > #form * {
-	flex-wrap: wrap;
-}
-form > #form > * {
-	margin: 5px;
-}
-form > #form > label {
+
+form > div {
 	width: 100%;
-	display: inherit;
-	white-space: normal;
 	justify-content: space-between;
+	background: #fff !important;
 }
-form > #form > label > input {
-	width: 50%;
+form > * {
+	margin: 5px 0 !important;
 }
-form > #form > #gender {
+
+form > div > * {
+	width: 40%;
+	height: 100%;
+	text-align: right;
+}
+
+form > div > input {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	direction: ltr;
+	text-align: left;
 }
+
+.input-group-text {
+	background: rgba(0, 0, 0, 0) !important;
+	border: none !important;
+}
+form > :last-child {
+	margin-left: 0.75rem !important;
+}
+
 /* ################################## /form ################################### */
 /* ################################## quiz-form ################################### */
-#quiz-form { 
+#quiz-form {
+	/* display: none; */
 	width: 100%;
 	height: auto;
 	text-align: right;
@@ -137,8 +151,10 @@ form > #form > #gender {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-#quiz-form div:nth-child(1) { 
+#quiz-form div:nth-child(1) {
+	display: none;
 }
+
 /* ################################## /quiz-form ################################### */
 
 /* ################################## result ################################### */
@@ -154,7 +170,8 @@ main div.res {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-main div.res :not(:nth-child(3)) { 
+main div.res :not(:nth-child(3)) {
+	display: none;
 	background-color: white;
 	padding: 10px;
 	border-radius: 5px;
@@ -162,7 +179,8 @@ main div.res :not(:nth-child(3)) {
 main div.res :nth-child(2) {
 	direction: ltr;
 }
-main div.res * { 
+main div.res * {
+	/* display: none; */
 	font-weight: lighter;
 	font-size: 2em;
 }
